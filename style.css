@@ -1,0 +1,64 @@
+/*
+    Name: David Huynh
+    Email: david_huynh@student.uml.edu
+    Major: C.S (Senior year) in course 91.61 GUI Programming I
+    Date Created: 07/29/2020
+    Short Description: Assigment 5 - First javscript Assigment - Creating an Interactive Dynamic Table
+    Copyright (c) 2020 by David Huynh. All rights reserved*/
+body *{
+  box-sizing: border-box;
+  
+}
+
+ul {
+    list-style: none;
+    margin: 15px 0px 15px 0px;
+    font-weight: bold;
+}
+
+table {
+    margin: auto;
+    text-align: center;
+    font-size: 12px;
+    empty-cells: hide;    
+    position: relative;
+    border-spacing: 1px;
+
+}
+
+
+tr, td {
+    padding: 4px;
+}
+
+/* scrolling for large table */
+#tableout {
+  max-width: 800px;
+  overflow: auto;
+  /*margin*/
+}
+
+
+.error {
+    color: red;
+    padding: 5px 5px 5px 5px;
+}
+
+
+td.both {
+    color: white;
+    background-color: gray;
+}
+
+td.either {
+    color: black;
+    background-color: white;
+}
+
+
+tr td:first-child,
+td.header {
+    color: white;
+    background-color: green;
+    border: white 1px;
+}

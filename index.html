@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- 
+    Name: David Huynh
+    Email: david_huynh@student.uml.edu
+    Major: C.S (Senior year) in course 91.61 GUI Programming I
+    Date Created: 08/05/2020
+    Short Description: Assigment 6 -  Creating an Interactive Dynamic Table by using Jquery validation plugin
+    Copyright (c) 2020 by David Huynh. All rights reserved
+ -->
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>H.W 5</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body class="bg-info">
+    <div class="container">
+        <h1>Creating an Interactive Dynamic Table using Jquery</h1>
+        <hr>
+        <p> How to Start: Enter the Row/Column number and number to the input boxes. 
+             (The range between starting number and ending number should be in 100,
+             The input should be in integer and in -1000 ~ 1000)</p>
+        <div class="row">
+            <div class="col-3">
+                <form name="input_form" id="input_form" autocomplete="off">
+                    <fieldset>
+                        <ul>
+                            <li>Row numbers:<br>
+                                <input type="text" id="rowStart" name="rowStart" class="form-control"  placeholder="Starting Row value" > <span class = "error", id="rowStart_error"></span>
+                            </li>
+                            <li>
+                                <input type="text" id="rowEnd" name="rowEnd"class="form-control"  placeholder="Ending Row value"> <span class = "error" id="rowEnd_error"></span>
+                            </li>
+                            <li> Column numbers:<br>
+                                <input type="text" id="colStart" name="colStart" class="form-control" placeholder="Starting Column value">  <span class = "error" id="colStart_error"></span>
+                            </li>
+                            </li>
+                            <li>
+                                <input type="text" id="colEnd"  name="colEnd" class="form-control"  placeholder="Ending Column value"> <span class = "error" id="colEnd_error"></span>
+                            </li>
+                        </ul>
+                        <input type="submit" id="submit_button" class="btn btn-primary"  value="Create Table">
+                    </fieldset>
+                </form>
+            </div>
+            <div class="col-9">
+                <div id="render">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="js/jquery.validate.js"></script>
+  </body>
+</html>
