@@ -2,4 +2,5 @@ Editor : Sublime
 Name: David Huynh
 Email: david_huynh@student.uml.edu
 
-Short Description: Assigment 6 using Jquey plugin
+Short Description: Assignment No. 7
+Using the jQuery UI Slider and Tab Widgets
